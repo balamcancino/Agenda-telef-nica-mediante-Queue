@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Agenda telefónica</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Agenda telefónica</h1>
+        
+        <div class="input-group">
+            <h2>Nombre</h2>
+            <input type="text" id="contactName" placeholder="Nombre del contacto">
+            <h2>Número</h2>
+            <input type="number" id="number" placeholder="Número del contacto">
+            <br><br>
+            <button id="btn_add">Agregar contacto</button>
+            <button id="btn_delete" >Eliminar contacto</button>
+        </div>
+        
+        <div id="contactList" class="contact-list">
+        </div>
+    </div>
+
+    <script type="module" src="src/Controllers/index.js"></script>
+</body>
+</html>
+

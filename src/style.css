@@ -1,0 +1,116 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #FF6B6B, #1E90FF);
+    animation: changeBackground 10s ease infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes changeBackground {
+    0% {
+        background: radial-gradient(circle, #FF6B6B, #1E90FF);
+    }
+    100% {
+        background: radial-gradient(circle, #1E90FF, #FF6B6B);
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.input-group input {
+    width: calc(50% - 10px);
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin-right: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    border-color: #1E90FF;
+    box-shadow: 0 0 20px rgba(30, 144, 255, 0.3);
+}
+
+.input-group button {
+    width: calc(50% - 10px);
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 18px;
+    outline: none;
+}
+
+.input-group button:hover {
+    background-color: #45a049;
+}
+
+.contact-list {
+    margin-top: 20px;
+}
+
+.contact-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-5px);
+}
+
+.contact-item span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.btn-delete {
+    float: right;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    background-color: #ca3931;
+}
